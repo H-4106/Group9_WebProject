@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@216&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Oswald:wght@300;400&family=Saira+Condensed:wght@200&family=Smooch+Sans:wght@600&family=Teko:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Calistoga&family=David+Libre:wght@400;500;700&family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oi&family=Open+Sans:ital@1&family=Podkova:wght@400;500;600;700;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="./assets/img/logo/logonike-removebg-preview.png">
+  <title>Shoes store</title>
+</head>
+
+<body>
+  <div style="display: none;" class="body-temp"></div>
+  <div class="body-main">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="inner-wrap">
+          <a style="width: 10%; min-width: 100px;" href="./index.html">
+            <img style="width: 60%;" src="assets/img/logo/logonike-removebg-preview.png" alt="logo">
+          </a>
+          <div class="inner-menu">
+            <ul>
+              <li>
+                <a href="./index.html" class="home active" value="">HOME</a>
+              </li>
+              <li>
+                <a href="#nike" class="nike">NIKE</a>
+              </li>
+              <li>
+                <a href="#adidas" class="adidas">ADIDAS</a>
+              </li>
+              <li>
+                <a href="#vans" class="vans">VANS</a>
+              </li>
+              <li>
+                <a href="#converse" class="converse">CONVERSE</a>
+              </li>
+            </ul>
+          </div>
+          <div class="inner-menu-mobi">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+          <div class="cartUser" style="display: flex;">
+            <button id="btnCart" style="border: 0px; margin-right: 20px">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+            <div class="test"></div>
+            <nav id="main-menu">
+              <i class="fa-solid fa-user"></i>
+              <ul class="sub-menu">
+                <li><a id="btnLogin" href="">Login</a></li>
+                <li><a id="btnSignup" href="">Signup</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="content">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="product-search">
+            <div class="search">
+              <div class="number_name">LIFESTYLE SNEAKERS</div>
+
+              <div class="item">
+                <input type="text" name="itemName" id="itemName" placeholder=" Search">
+              </div>
+            </div>
+            <form class="filter">
+              <div id="filter_option" style="display: none;">
+                <div class="item">
+                  <label>Gender: </label>
+                  <input type="checkbox" name="gender" id="men" value="Men">
+                  <label for="men">Men</label>
+                  <input type="checkbox" name="gender" id="women" value="Women">
+                  <label for="women">Women</label>
+                </div>
+                <div class="item">
+                  <label>Min Price:</label>
+                  <input type="number" name="minPrice">
+                </div>
+                <div class="item">
+                  <label>Max Price:</label>
+                  <input type="number" name="maxPrice">
+                </div>
+                <div class="item submit">
+                  <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </div>
+            </form>
+            <div class="product"></div>
+          </div>
+          <div class="see-more">
+            <ul>
+
+              <div class="number-page" id="number-page"></div>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Content -->
+
+    <!-- Modal FORM -->
+    <div class="overlay"></div>
+    <div id="modalLogin">
+      <button id="closeModal">X</button>
+      <form action="" id="formLogin">
+        <h1>Login Form</h1>
+        <div class="form-control">
+          <input id="email" type="email" placeholder="Email" />
+          <small></small>
+          <span></span>
+        </div>
+
+        <div class="form-control">
+          <input id="password" type="password" placeholder="Password" />
+          <small></small>
+          <span></span>
+        </div>
+        <button type="submit" class="btn-submit" id="control">Login</button>
+      </form>
+    </div>
+
+    <div class="overlay"></div>
+    <div id="modalSignup">
+      <button id="closeModalSign">X</button>
+      <form action="" id="formSignup">
+        <h1>SignUp Form</h1>
+        <div class="form-control">
+          <input id="nameSign" type="text" placeholder="Name" oninput="clearErrorMessage('nameSign')" />
+          <small></small>
+          <span></span>
+        </div>
+
+        <div class="form-control">
+          <input id="emailSign" type="email" placeholder="Email" oninput="clearErrorMessage('emailSign')" />
+          <small></small>
+          <span></span>
+        </div>
+        <div class="form-control">
+          <input id="passwordSign" type="password" placeholder="Password" oninput="clearErrorMessage('passwordSign')" />
+          <small></small>
+          <span></span>
+        </div>
+
+        <div class="form-control">
+          <input id="confirm-passwordSign" type="password" placeholder="Confirm Password" />
+          <small></small>
+          <span></span>
+        </div>
+        <button type="submit" class="btn-submit" id="btn_submit">
+          Sign Up
+        </button>
+      </form>
+    </div>
+
+    <!--Modal AdMin-->
+    <div id="modalAdmin">
+
+    </div>
+    <!--End Modal AdMin-->
+
+    <div id="detailModal" class="modal"
+      style="position: fixed; top: 0; left: 0; bottom: 0; right: 0; display: none; background-color: blue; width: 1000px; height: 750px;">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+
+    <!--Modal Detail-->
+
+    <!-- End Modal Detail-->
+
+    <!-- Modal Cart-->
+    <div class="table-mt-2" id="modalCart" style="display: none;">
+      <span id="closeModalCart"
+        style="background-color: #ad2020; color: white; padding: 1px 6px; font-size: 20px;">x</span>
+      <div class="menu-cart">
+        <div class="cartProduct" onclick="productCart()">Product Cart</div>
+        <div class="Oderhistory" onclick="historyOrder()">Order History</div>
+      </div>
+      <table class="cart">
+        <thead>
+          <tr class="tableProduct">
+            <th>Name Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th style="padding-right:30px;"></th>
+          </tr>
+        </thead>
+        <tbody id="tblSanPham">
+        </tbody>
+      </table>
+      <h1 class="none1" style="text-align: center; margin-left: 57%; margin-top: 50px;">Total: <p class="totalPrice"
+          style="display: inline-block;"></p>
+      </h1>
+      <div class="none2" style="text-align: end; margin-right: 100px;"><button id="btnDatHang"
+          onclick="OrderBy(mangCart)">Buy now</button></div>
+    </div>
+    <!--END Modal Cart-->
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="more">
+            <div>
+              273 An Dương Vương, quận 5, Tp HCM
+            </div>
+            <div>Phone: 0123456789</div>
+          </div>
+          <div style="width: 10%;" class="logo">
+            <img style="width: 90%;" src="assets/img/logo/logonike-removebg-preview.png" alt="">
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+  <script src="./model/Product.js"></script>
+  <script src="./model/UserLogin.js"></script>
+  <script src="./model/UserRegister.js"></script>
+  <script src="./model/Order.js"></script>
+  <script src="./controller/login.js"></script>
+  <script src="./controller/signup.js"></script>
+  <script src="./controller/cart.js"></script>
+  <script type="module" src="./controller/index.js"></script>
+  <script src="./controller/view.js"></script>
+
+</body>
+
+</html>

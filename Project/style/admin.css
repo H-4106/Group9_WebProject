@@ -1,0 +1,380 @@
+/* All Web */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.none {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 20PX;
+    color: gray;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+span {
+    border: 2px solid black;
+    padding: 3px 10px;
+    background-color: #D24852;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+        /* Firefox */
+      }
+
+/* End All Web */
+
+/* End All Web */
+
+/* Header */
+.header {
+    border: 1px solid rgba(128, 128, 128, 0.119);
+    margin-bottom: 70px;
+}
+
+.header .container .inner-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: rgb(244, 243, 242);
+    width: 100%;
+    z-index: 9999;
+}
+
+.header .container .inner-wrap .inner-menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .container .inner-wrap .inner-menu-mobi {
+    display: none;
+}
+
+.header .container .inner-wrap .inner-menu ul li {
+    margin: 0 20px;
+}
+
+.header .container .inner-wrap .inner-menu ul li a {
+    color: gray;
+    font-weight: 600;
+}
+
+.header .container .inner-wrap .inner-menu ul li a:hover {
+    color: black;
+}
+
+.header .container .inner-wrap .cartUser i {
+    color: black;
+}
+
+.container .inner-wrap .bars {
+    color: black;
+}
+
+.container .inner-wrap .cartUser {
+    display: flex;
+    align-items: center;
+}
+
+.container .inner-wrap .cartUser #btnSetting i {
+    padding-left: 15px;
+}
+
+.header .container .inner-wrap .inner-menu .product {
+    color: black;
+}
+
+/* End Header */
+
+/* Content */
+.content .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+
+.content .container .inner-wrap .product-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.content .inner-wrap #addProduct {
+    padding: 5px 10px;
+    background-color: rgb(245, 243, 243);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.content .container .inner-wrap .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .container .inner-wrap .search input {
+    height: 40px;
+    width: 225px;
+    padding: 0 10px;
+}
+
+.content .container .inner-wrap .search i {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.content .container .inner-wrap .search i:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+.content .container .inner-wrap .paging-product ul {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content .container .inner-wrap .paging-product ul a {
+    border: 1px solid black;
+    color: black;
+    padding: 3px 10px;
+    position: relative;
+    margin: 0 3px;
+}
+
+.content .container .inner-wrap table {
+    border-collapse: collapse;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.content .container .inner-wrap table,
+th,
+td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.content .container .inner-wrap table th {
+    font-size: 25px;
+    background-color: rgb(225, 221, 221);
+    color: #000;
+}
+
+.content .container .inner-wrap table .edit-del button {
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+}
+
+.content .container .inner-wrap table .edit-del #edit-item {
+    background-color: #B5D6F1;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 6px;
+}
+
+.content .container .inner-wrap table .edit-del #del-item {
+    background-color: #D24852;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 6px;
+}
+
+.content .container .inner-wrap table .edit-del i {
+    padding-left: 9px;
+}
+
+.content .container .inner-wrap .paging-product .number-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .container .inner-wrap .see-more .number-page .active {
+    background-color: gray;
+}
+
+.content .container .inner-wrap .see-more .active {
+    background-color: gray;
+    color: white;
+}
+
+.content .container .inner-wrap .paging-product ul li {
+    border: 1px solid black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.avtive-gray {
+    background-color: gray;
+    color: white;
+}
+
+/* End Content */
+
+/* Footer */
+.footer {
+    background-color: rgb(244, 243, 242);
+}
+
+.footer .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 15px 0;
+}
+
+.footer .container .inner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .container .inner-wrap .more-contact {
+    color: black;
+}
+
+.footer .container .inner-wrap .social-contact i {
+    padding: 0 4px;
+    color: black;
+}
+
+/* End footer */
+
+/* Add Product */
+.body-temp .content2 {
+    /* font-family: 'Smooch Sans'; */
+    /* font-weight: 600; */
+    font-family: 'Grenze', serif;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    background-color: rgb(245, 242, 237);
+    padding: 10px 30px 20px 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 3px solid black;
+    margin-top: 60px;
+    z-index: 999;
+    position: fixed;
+    top: 2%;
+    left: 35%;
+}
+
+.body-temp .content2 .form-add {
+    font-size: 20px;
+}
+
+.content2 #addData, #editData {
+    padding: 6px 10px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    border: 2px solid cadetblue;
+}
+
+.eror-mesage {
+    color: red;
+}
+
+/* End Add Product */
+
+/* Paging */
+.content .container .active {
+    background-color: gray;
+    color: white;
+}
+/* End Paging */
+
+/* Loi tum lum */
+#btnCondition {
+    padding: 2px 3px;
+    border: none;
+    background-color: white;
+    color: red;
+}
+
+#togglePassword {
+    padding: 2px 1px;
+    border: none;
+    background-color: white;
+}
+
+#password {
+    padding: 2px 1px;
+    border: none;
+    background-color: white;
+}
+
+#delCus {
+    /* background-color: #D24852; */
+    background-color: white;
+    /* border-radius: 3px; */
+    border: none;
+    padding: 4px 6px;
+    color: red;
+}
+.filter-date{
+    display: flex;
+    font-size: 27px ;
+    
+}
+.filter-date input{
+    margin: 0px 5px;
+}
+.filter-date label{
+    margin: 4px;
+    color: #000;
+    
+}
+.filter-admin form{
+    display: flex;
+}
+.filter-admin i{
+    margin-top: 7px;
+    color: #000;
+}
+.filter-admin button{
+    /* background: none; */
+    /* border: 1px solid black */
+    padding: 0px 8px;
+}
