@@ -235,6 +235,12 @@ function searchProduct() {
           return false;
         }
       }
+      //filter theo brand
+      if(valueFilter.categorySelect.value !== '') {
+        if (valueFilter.categorySelect.value.toLowerCase() !== item.category.toLowerCase()) {
+          return false;
+        }
+      }
       //filter theo gia
       if(valueFilter.minPrice.value != ''){
         if(item.price < valueFilter.minPrice.value){
